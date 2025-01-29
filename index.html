@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DaisyUI</title>
-    <!-- Google font -->
+    <!-- Google font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google fonts inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Tailwind css and DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .poppins{
             font-family: "Poppins", serif;
+        }
+        .inter{
+            font-family: "Inter", serif;
         }
     </style>
     <script>
@@ -318,9 +325,73 @@
                 </div>
             </div>
           </section>
-    </main>
-    <footer>
 
+          <!-- Freequently asked questions -->
+           <section class="container space-y-10 my-24 mx-auto">
+                <h2 class="font-semibold text-5xl text-black text-center">Frequently Asked <span class="text-bike-primary">Questions</span></h2>
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./images/others/faq.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div class="inter space-y-1">
+                            <div class="collapse collapse-arrow border">
+                                <input type="radio" name="my-accordion-2" checked="checked" />
+                                <div class="inter collapse-title text-xl font-medium">What are the most important things I should know about riding a bike?</div>
+                                <div class="collapse-content">
+                                    <p class="inter">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-arrow border">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
+                                    new one?</div>
+                                <div class="collapse-content">
+                                <p>hello</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-arrow border">
+                                <input type="radio" name="my-accordion-2" />
+                                <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
+                                <div class="collapse-content">
+                                <p>hello</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-arrow border">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?</div>
+                            <div class="collapse-content">
+                              <p>hello</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+    </main>
+    
+    <!-- Footer section -->
+    <footer class="bg-[#0B0D17]">
+            <div class="md:container mx-auto md:flex justify-between text-white p-10">
+                <nav>
+                    <div class="flex gap-6">
+                      <h4>Download Now</h4>
+                      <h4>License</h4>
+                    </div>
+                    <div class="flex gap-6 mt-3">
+                      <a class="link link-hover">About</a>
+                      <a class="link link-hover">Features</a>
+                      <a class="link link-hover">Pricing</a>
+                      <a class="link link-hover">Carrer</a>
+                      <a class="link link-hover">Helps</a>
+                      <a class="link link-hover">Privacy Policy</a>
+                    </div>
+                    <p class="mt-6">© 2020 bike. All rights reserved</p>
+                </nav>
+                <nav class="mt-10 md:mt-0 space-y-6">
+                    <h4 class="mb-2">Get the App</h4>
+                    <img class="w-2/3" src="./images/others/ios.png" alt="">
+                    <img class="w-2/3" src="./images/others/android.png" alt="">
+                </nav>
+            </div>
     </footer>
 
 </body>
